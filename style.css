@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat&display=swap');
 
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Comfortaa', sans-serif;
-    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.nav {
+body {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.header {
     width: 100%;
     height: 70px;
     background-color: #fcaf02;
@@ -15,24 +18,23 @@
     align-items: center;
     justify-content: space-between;
     position: sticky;
-    box-sizing: border-box;
 }
 
-div>ul {
+.logo {
+    padding-left: 20px;
+}
+
+.nav-links ul {
     display: flex;
     list-style-type: none;
 }
 
-div>ul>li {
+.nav-links ul li {
     padding: 20px;
     font-size: 20px;
 }
 
-.image {
-    padding-left: 20px;
-}
-
-.hero {
+.hero-section {
     width: 100%;
     display: flex;
     align-items: center;
@@ -40,17 +42,17 @@ div>ul>li {
     box-sizing: border-box;
 }
 
-.content {
+.hero-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.marr {
+.margin {
     margin: 15px;
 }
 
-.btn {
+.btn-primary {
     border: none;
     background-color: #fcaf02;
     font-weight: 900;
@@ -59,21 +61,17 @@ div>ul>li {
     border-radius: 20px;
 }
 
-div>imG {
-    width: 600px;
-}
-
-form {
+.form-container {
     display: flex;
     flex-direction: column;
 }
 
-form>div {
+.form-row {
     display: flex;
     justify-content: space-between;
 }
 
-input {
+.input-field {
     padding: 15px;
     color: #fcaf02;
     border: 2px solid #fcaf02;
@@ -81,62 +79,56 @@ input {
     background-color: black;
 }
 
-input::placeholder {
+.input-field::placeholder {
     color: #fcaf02;
 }
 
-.widd {
-    width: 50%;
+.width-48 {
+    width: 48%;
 }
 
-.conus {
+.contact-heading {
     font-size: 50px;
     color: #fcaf02;
 }
 
-.heading {
+.page-heading {
     font-size: 50px;
 }
 
-.center {
+.center-content {
     display: flex;
     justify-content: center;
 }
 
-.tableex {
+.table-container {
     display: flex;
     justify-content: center;
     margin-bottom: 90px;
 }
 
-table {
+.data-table {
     border-collapse: collapse;
     border: 2px solid #fcaf02;
     width: 100vw;
     color: #fcaf02;
 }
 
-td {
+.table-cell {
     padding: 10px 20px;
 }
 
-th {
-    text-align: left;
-    padding: 10px 20px;
-    border: 2px solid #fcaf02;
-}
-
-tbody>tr>td {
+.table-body-row td {
     border-right: 2px solid #fcaf02;
 }
 
-tfoot>tr>td {
+.table-footer-row td {
     border-right: 2px solid black;
     background-color: #fcaf02;
     color: black;
 }
 
-.widdd {
+.width-5 {
     width: 5%;
 }
 
@@ -144,7 +136,7 @@ tfoot>tr>td {
     text-align: center;
 }
 
-.body-style {
+.body-container {
     background-color: black;
 }
 
@@ -152,6 +144,6 @@ tfoot>tr>td {
     color: white;
 }
 
-.last {
+.last-cell {
     border-right: 2px solid #fcaf02;
 }
