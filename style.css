@@ -1,16 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
+    margin: 0px;
+    padding: 0px;
     font-family: 'Comfortaa', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.header {
+.nav {
     width: 100%;
     height: 70px;
     background-color: #fcaf02;
@@ -18,23 +15,24 @@ body {
     align-items: center;
     justify-content: space-between;
     position: sticky;
+    box-sizing: border-box;
 }
 
-.logo {
-    padding-left: 20px;
-}
-
-.nav-links ul {
+div>ul {
     display: flex;
     list-style-type: none;
 }
 
-.nav-links ul li {
+div>ul>li {
     padding: 20px;
     font-size: 20px;
 }
 
-.hero-section {
+.image {
+    padding-left: 20px;
+}
+
+.hero {
     width: 100%;
     display: flex;
     align-items: center;
@@ -42,17 +40,17 @@ body {
     box-sizing: border-box;
 }
 
-.hero-content {
+.content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.margin {
+.marr {
     margin: 15px;
 }
 
-.btn-primary {
+.btn {
     border: none;
     background-color: #fcaf02;
     font-weight: 900;
@@ -61,17 +59,21 @@ body {
     border-radius: 20px;
 }
 
-.form-container {
+div>imG {
+    width: 600px;
+}
+
+form {
     display: flex;
     flex-direction: column;
 }
 
-.form-row {
+form>div {
     display: flex;
     justify-content: space-between;
 }
 
-.input-field {
+input {
     padding: 15px;
     color: #fcaf02;
     border: 2px solid #fcaf02;
@@ -79,56 +81,62 @@ body {
     background-color: black;
 }
 
-.input-field::placeholder {
+input::placeholder {
     color: #fcaf02;
 }
 
-.width-48 {
-    width: 48%;
+.widd {
+    width: 50%;
 }
 
-.contact-heading {
+.conus {
     font-size: 50px;
     color: #fcaf02;
 }
 
-.page-heading {
+.heading {
     font-size: 50px;
 }
 
-.center-content {
+.center {
     display: flex;
     justify-content: center;
 }
 
-.table-container {
+.tableex {
     display: flex;
     justify-content: center;
     margin-bottom: 90px;
 }
 
-.data-table {
+table {
     border-collapse: collapse;
     border: 2px solid #fcaf02;
     width: 100vw;
     color: #fcaf02;
 }
 
-.table-cell {
+td {
     padding: 10px 20px;
 }
 
-.table-body-row td {
+th {
+    text-align: left;
+    padding: 10px 20px;
+    border: 2px solid #fcaf02;
+}
+
+tbody>tr>td {
     border-right: 2px solid #fcaf02;
 }
 
-.table-footer-row td {
+tfoot>tr>td {
     border-right: 2px solid black;
     background-color: #fcaf02;
     color: black;
 }
 
-.width-5 {
+.widdd {
     width: 5%;
 }
 
@@ -136,7 +144,7 @@ body {
     text-align: center;
 }
 
-.body-container {
+.body-style {
     background-color: black;
 }
 
@@ -144,6 +152,6 @@ body {
     color: white;
 }
 
-.last-cell {
+.last {
     border-right: 2px solid #fcaf02;
 }
